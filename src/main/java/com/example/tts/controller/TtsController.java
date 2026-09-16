@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/tts")
-@CrossOrigin(origin="https://text-to-speech-frontend-iota.vercel.app")
+@CrossOrigin(origins="*")
 public class TtsController {
 
 	private final TtsService ttsService;
