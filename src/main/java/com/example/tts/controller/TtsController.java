@@ -5,6 +5,7 @@ import com.example.tts.model.TtsRequest;
 import com.example.tts.service.TtsService;
 
 import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/tts")
+@CrossOrigin(origin="https://text-to-speech-frontend-iota.vercel.app")
 public class TtsController {
 
 	private final TtsService ttsService;
